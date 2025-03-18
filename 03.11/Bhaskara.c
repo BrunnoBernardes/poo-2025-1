@@ -15,6 +15,7 @@ int main(int argc, char** argv)  {
    double  a, b, c;
      
    printf("X1 = %lf", calculaX1(2, -5, -7));
+   printf("\n");
    printf("X2 = %lf", calculaX2(2, -5, -7));
    return 0;
 }
