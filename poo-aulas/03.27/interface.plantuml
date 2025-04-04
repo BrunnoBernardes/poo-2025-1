@@ -1,0 +1,29 @@
+@startuml interface
+
+interface interA {
+  -variable1
+  variable2
+--
+    +method1(int number): void
+    #method2(): double
+    ~method3(): String
+
+   }
+
+class ClassB {
+  variable3
+  --
+    +method1(int number): void
+    #method4(int number): int
+}
+
+interA <|.. ClassB
+ClassB -- ClassC
+ClassB -- ClassD
+
+note as N1
+Diagrama de Classe com a interface (InterA) 
+Observe que o method1(int number) deve ser 
+implementado na classe classB 
+
+end note

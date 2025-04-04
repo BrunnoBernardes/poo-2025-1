@@ -1,0 +1,29 @@
+@startuml ClasseAbstrata
+
+abstract class ClassA {
+  -variable1
+  variable2
+--
+    +void {abstract} method1(int number)
+    #method2(): double
+    ~method3(): String
+
+   }
+
+class ClassB {
+  variable3
+  --
+    +method1(int number): void
+    #method4(int number): int
+}
+
+ClassA <|-- ClassB
+ClassB  -- ClassC
+ClassB  -- ClassD
+
+note as N1
+Diagrama de Classe com a classe Abstrata (classA) 
+Observe que o method1(int number) deve ser 
+implementado na classe B 
+
+end note

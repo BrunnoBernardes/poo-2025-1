@@ -1,0 +1,29 @@
+@startuml Produto
+
+' Nome: Brunno Cunha Bernardes
+' Matrícula: 202405846
+' Data: 25/03/2025
+' Descrição: Diagrama de classes para o exercício de POO 2025/1
+
+skinparam classAttributeIconSize 0
+class produto {
+-nome: String
+-preco: double
+-quantidade: int
+--
++Produto(String nome, double preco, int quantidade): ctor
++getNome(): String
++getQuantidade(): int
++getPreco(): double
+#total(): double
+#adicionar(int quantia): void
+#remover(int quantia): void
+}
+
+class TestaProduto{
++TestaProduto(): ctor
+{static} +main(): void
+}
+produto -- TestaProduto
+
+@enduml
