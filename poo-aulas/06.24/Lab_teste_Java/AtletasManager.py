@@ -10,7 +10,7 @@ def filtrar_atletas():
             altura = int(alt_str)
             peso   = float(peso_str)
             if altura > 170 and peso < 80:
-                print(nome)
+                print('- ', nome)
 
 def adicionar_atleta(nome, altura, peso):
     with open(CSV_FILE, 'r', newline='', encoding='utf-8') as f:
@@ -19,8 +19,9 @@ def adicionar_atleta(nome, altura, peso):
         nomes_existentes = {linha[0]     # assume que o nome está na coluna 0
                             for linha in leitor}
         
+        
         if nome in nomes_existentes:
-            print('Nome já está no arquivo. Nenhuma linha foi adicionada.')
+            print('\nNome já está no arquivo. Nenhuma linha foi adicionada.')
             return
     
         escritor = csv.writer(f)

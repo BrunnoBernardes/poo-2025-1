@@ -35,7 +35,7 @@ public class AtletasManager {
 
         // 2) Verifica duplicata
         if (nomesExistentes.contains(nome)) {
-            System.out.println(nome + "' já está no arquivo. Nenhuma linha foi adicionada.");
+            System.out.println(nome + " já está no arquivo. Nenhuma linha foi adicionada.");
             return;
         }
 
