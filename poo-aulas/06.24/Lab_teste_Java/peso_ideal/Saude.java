@@ -1,11 +1,5 @@
 package peso_ideal;
 
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
-
-
-
-
 public class Saude {
 	int idade; double altura; double peso;
 

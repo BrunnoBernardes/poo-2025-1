@@ -8,7 +8,7 @@ public class TransformaNomeTest {
   @Test
   public void testMaiusculo() {
     TransformaNome tnome = new TransformaNome("Maria");
-    assertEquals("MARIA222",tnome.maiusculo());
+    assertEquals("MARIA",tnome.maiusculo());
   }
 
   @Test
