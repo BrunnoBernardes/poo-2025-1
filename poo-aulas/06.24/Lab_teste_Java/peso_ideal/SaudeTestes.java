@@ -5,16 +5,16 @@ import org.junit.Test;
 
 public class SaudeTestes {
 
-@Test
+	@Test
 	public void testeIMC() {
 		Saude saude = new Saude(20, 1.64, 62);
-	assertEquals( saude.calculaIMC(), 23, 0.5 );
-	
-}
+		assertEquals(saude.calculaIMC(), 23, 0.5);
 
-@Test
+	}
+
+	@Test
 	public void testeCondicao() {
 		Saude saude = new Saude(20, 1.64, 62);
-	assertTrue( saude.condicaoFisica().equals("Peso adequado") );
-}
+		assertTrue(saude.condicaoFisica().equals("Peso adequado"));
+	}
 }

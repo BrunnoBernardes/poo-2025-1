@@ -8,19 +8,19 @@ public class TransformaNomeTest {
   @Test
   public void testMaiusculo() {
     TransformaNome tnome = new TransformaNome("Maria");
-    assertEquals("MARIA",tnome.maiusculo());
+    assertEquals("MARIA", tnome.maiusculo());
   }
 
   @Test
-    public void testMinusculo() {
+  public void testMinusculo() {
     TransformaNome tnome = new TransformaNome("Maria");
-    assertEquals("maria",tnome.minusculo());
+    assertEquals("maria", tnome.minusculo());
   }
 
   @Test
-    public void testBuscarBranco() {
+  public void testBuscarBranco() {
     TransformaNome tnome = new TransformaNome("Maria            Clara Machado");
-    assertEquals(13,tnome.buscarBranco());
-    //assertEquals(13,tnome.buscarBranco());
+    assertEquals(13, tnome.buscarBranco());
+    // assertEquals(13,tnome.buscarBranco());
   }
 }
